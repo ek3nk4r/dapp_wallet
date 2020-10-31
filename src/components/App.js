@@ -133,7 +133,6 @@ class App extends Component {
     this.setState({balance: null});
     this.setState({network: null});
     this.setState({provider: null});
-    // this.setState({web3Modal: null});
 
     await this.state.web3Modal.clearCachedProvider();
   }
@@ -141,12 +140,12 @@ class App extends Component {
   async send(event){
     event.preventDefault()
 
-    //check immidetly if provider exisits
     if(this.state.provider.isMetaMask){
       this.state.web3.eth.sendTransaction({from: this.state.account, to: this.state.account, value: '1'})
     } else if (this.state.provider.wc){
       window.alert('Accept on phone')
-      //declare data for JSON RPC request
+
+      //Declare data for JSON RPC request
       const from = this.state.account
       const to = this.state.account
       const value = 1 //1 wei
