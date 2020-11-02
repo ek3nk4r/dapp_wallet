@@ -2,4 +2,9 @@
 p {
   line-height: 10px;   /* within paragraph */
   margin-bottom: 10px; /* between paragraphs */
-  }
+}
+
+br {
+   display: block;
+   margin: -4px;
+}
