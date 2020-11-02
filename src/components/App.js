@@ -23,7 +23,7 @@ class App extends Component {
       walletconnect: {
         package: WalletConnectProvider,
         options: {
-          infuraId: "451d695dfee84d79815ebdfcb961da08",
+          infuraId: "db6231b5ef424bd9a61a76670e56086b",
         }
       }
     };
